@@ -1,0 +1,16 @@
+info:
+  name: Get Application
+  type: http
+  seq: 11
+
+http:
+  method: GET
+  url: http://localhost:4000/api/applications/dccafbe7-a821-4f00-9cd6-479e49a19b08
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
