@@ -4,6 +4,7 @@ import helmet from "helmet";
 import cookieParser from "cookie-parser";
 import authRouter from "./routes/auth";
 import applicationsRouter from "./routes/applications";
+import analyticsRouter from "./routes/analytics";
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.get("/api/health", (_req, res) => {
 
 app.use("/api/auth", authRouter);
 app.use("/api/applications", applicationsRouter);
+app.use("/api/analytics", analyticsRouter);
 
 app.use(
   (err: unknown, _req: express.Request, res: express.Response, _next: express.NextFunction) => {

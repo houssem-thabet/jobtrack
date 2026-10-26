@@ -1,0 +1,19 @@
+info:
+  name: Analytics Summary
+  type: http
+  seq: 12
+
+http:
+  method: GET
+  url: http://localhost:4000/api/analytics/summary
+  body:
+    type: json
+    data: '{"email":"test@test.com","password":"password123"}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
